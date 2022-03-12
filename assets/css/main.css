@@ -1,0 +1,422 @@
+#app{
+
+}
+#header{
+    display: flex;
+height: var(--height-header);
+width: 100%;
+position: fixed;
+background-color: black;
+z-index: 1;
+
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+.navbar__item{
+    margin: 0px;
+    padding-left: 0px;
+display: flex;
+
+list-style: none;
+
+}
+.navbar__item-btn{
+   line-height: 46px;
+ cursor: pointer;
+text-align: center;
+color: var(--white-color);
+
+}
+.navbar__item-btn:hover .navbar__item-link {
+    background-color: #999;
+    color: black ;
+
+}
+
+.navbar__item-link{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 0px 24px;
+}
+
+.navbar__item-btn-icon{
+  font-size: 1.6rem;
+  padding: 0px 24px;
+  
+}
+.navbar__item--more:hover {
+    background-color: #999;
+   
+
+}
+/* .navbar__item--none{
+display: none;
+} */
+.navbar__item-btn.navbar__item-btn--effect:hover{
+   background-color: #f44336;
+    color: var(--white-color);
+}
+.navbar__item-btn--noficate{
+    position: relative;
+}
+
+
+.navbar__item-link-icon{
+   margin-left: 4px;
+}
+
+
+.navbar__item-btn-infor{
+position: absolute;
+width: 160px;
+background-color: var(--white-color);
+box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
+margin: 0px;
+text-align: left;
+left: 0px;
+z-index: 1;
+display: none;
+}
+.navbar__item-btn-infor-link{
+display: block;   
+
+text-decoration: none;
+font-size: 1.4rem;
+color: black;
+padding-left: 10px;
+
+
+}
+.navbar__item-btn-infor-link:hover{
+background-color: rgb(245, 241, 241);
+}
+.navbar__item-btn--noficate:hover .navbar__item-btn-infor{
+  display: block;
+}
+/* container */
+
+/* slider */
+
+
+.slider{
+  position: relative;
+}
+.slider__img{
+  
+}
+.slider__text{
+    text-align: center;
+    padding: 0px;
+    position: absolute;
+    font-size: 2rem;
+    color: var(--white-color);
+bottom: 50px;
+left: 50%;
+transform: translateX(-50%);
+
+}
+
+.container{
+padding-top: 50px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 350px;
+    line-height: 1.6rem;
+}
+.container h2{
+text-align: center;
+font-size: 3rem;
+font-weight: 400;
+padding-top: 60px;
+margin-top: 0px;
+}
+
+.container p{
+margin: 0px ;
+
+}
+/*  */
+.container-tour{
+    
+    background-color: black;
+    padding-bottom: 60px;
+}
+.container__note{
+    text-align: center;
+    color: rgb(179, 177, 177);
+    padding: 10px 0px 20px 0px;
+  font-style: italic;
+    }
+    .container__infor{
+        margin: 20px 0px;
+        display: flex;
+       
+    }
+   .container__infor-body{
+       display: flex;
+       flex-direction: column;
+       padding: 32px 0px;
+       align-items: center;
+   } 
+   .container__infor-body span{
+    font-size: 1.3rem;
+    font-weight: 450;
+   
+   }
+   .container__infor-img{
+       border-radius: 4px;
+   }
+
+   /* tour-date */
+.tour__date{
+margin: 20px 0px 30px 0px;
+background-color: black;
+padding: 0px 8px;
+}
+.tour__date-ticket{
+background-color: var(--white-color);
+display: flex;
+padding: 6px 16px 6px 16px;
+
+align-items: center;
+border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.tour__date-ticket span{
+    color: rgb(179, 177, 177);
+    font-size: 1.5rem;
+    
+}
+.tour__date-ticket--none{
+    min-width: 60px;
+    padding: 4px 10px;
+    
+    background-color: #f44336;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+.tour__date-ticket--number{
+    background-color: black;
+    border-radius: 50%;
+    padding: 4px 10px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    
+    text-align: center;
+ margin-left: 650px;
+ 
+ 
+}
+
+   /* tour-place */
+   .tour__place{
+       background-color: black;
+display: flex;   
+align-items: center;
+    }
+    .tour__place-body{
+        padding: 0px 8px;
+       display: flex;
+       flex-direction: column;
+       
+    }
+    .tour__place-img:hover{
+        filter: brightness(60%);
+    }
+   .tour__place-content{
+       padding: 24px 16px 0px 16px;
+       margin-top: 0px;
+       background-color: var(--white-color);
+   }
+   .tour__place-content p {
+       margin-top: 10px;
+       font-size: 1.5rem;
+   }
+  
+   /* CONTACT */
+.container-body__contact{
+    display: flex;
+    justify-content: space-between;
+    padding:  0px 8px;
+}
+.container__contact{
+
+}
+.container__contact-item{
+font-size: 1.8rem;
+margin-bottom: 12px;
+}
+.container__contact-item-icon{
+    margin-right: 8px;
+    font-size: 1.6rem;
+}
+.container__contact-input{
+margin-bottom: 10px;
+}
+.container__contact-input-btn{
+   padding: 10px 4px;
+outline: none;
+/* min-width: 186px;  */
+border: 1px solid #ccc;
+}
+.container__contact-input-btn + .container__contact-input-btn{
+    margin-left: 10px;
+}
+.container__contact-input-btn.container__contact-input-btn--msg{
+   
+    width: 100%;
+   
+}
+.image{
+margin-top: 100px ;
+filter: grayscale(50%);
+}
+.footer{
+    width: 100%;
+    
+    font-size: 2rem;
+    color: #666;
+    font-weight: 350px;
+   padding-top: 64px;
+   padding-bottom: 64px;
+   
+}
+.footer-contact{
+width: 100%;
+text-align: center;
+}
+.footer-contact-icon{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-contact a{
+    
+    color: #666;
+    
+}
+.footer-contact-icon:hover{
+    color: #999;
+}
+
+
+/* responsive */
+@media screen and (min-width:64em) {
+    .respondsive__pc--none{
+        display: none;
+                    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 46.1875em) {
+  #header{
+    overflow: hidden;
+  }
+   .navbar__item{
+    
+       background-color: black;
+       flex-direction: column;
+       
+   }
+   
+   .navbar__item-btn{
+       width: 100%;
+        }
+        .navbar__item-link{
+            display: block;
+            text-align: left;
+        }
+            .navbar__item-btn--respond{
+        display: block;
+            }
+            .image{
+                width: 100%;
+            }
+            .slider__text{
+                display: none;
+            }
+             .navbar__item--none{
+                display: inline-block;
+            }
+            .respondsive__mobile--none{
+display: none;
+            }
+            #navbar__item-list{
+                width: 60px;
+
+            }
+            #navbar__item-list:hover{
+                color: #000;
+                background-color: #999;
+            }
+            .navbar__item-btn:hover .navbar__item-link{
+                background-color: black;
+                color: aquamarine;
+            }
+            .navbar{
+                display: block;
+            }
+            .navbar__item-btn:first-child{
+                width: 100px;
+            }
+            .container__note-text {
+                text-align: center;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+            .container__infor{
+                flex-direction: column;
+            }
+            .tour__date-ticket--number{
+                margin-left: 10px;
+            }
+            .tour__place{
+                flex-direction: column;
+            }
+            .tour__place-body{
+                margin-top: 16px;
+            }
+            .container h2{
+                padding-top: 20px;
+            }
+            .container-body__contact{
+                flex-direction: column;
+            }
+            .container__contact-input-btn{
+                display: block;
+                width: 100%;
+    
+            }
+            .container__contact-input-btn + .container__contact-input-btn{
+                margin-left: 0px;
+            }
+            
+}
+
+/* tablet */
+
+@media screen and (min-width:46.25em ) and (max-width: 63.9375em) {
+    
+    .respondsive__pc--none{
+        display: none;
+                    }
+
+    .image{
+        width: 100%;
+    }
+    .slider__text{
+        font-size: 1.3rem;
+    }
+    .container__note p{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}

@@ -1,0 +1,45 @@
+:root{
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --height-header: 46px; 
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: 12px;
+}
+.grid__collumn-10{
+width: calc(100%-16.667%);
+padding-left: 12px;
+padding-right: 12px;
+}
+.btn{
+    background-color: black;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    text-align: center;
+    padding:  12px 24px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.btn:hover{
+    background-color: rgb(196, 196, 196);
+    color: black;
+}
