@@ -106,6 +106,10 @@ background-color: rgb(245, 241, 241);
 
 .slider{
   position: relative;
+  display: none;
+}
+.slider-fill{
+    display: block;
 }
 .slider__img{
   
