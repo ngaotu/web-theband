@@ -75,13 +75,54 @@
         </header>
 
         
-        <div class="slider">
+          <div class="slider ">
 <img class="slider__img" src="https://www.w3schools.com/w3images/la.jpg" style="width:100%; min-height:30%"  alt="music festival">
-<div class="slider__text">
+
+
+<div class=" slider__text">
     <h3>Lost Angeles</h3>
     <p>We had the best time playing at Venice Beach</p>
 </div>       
 </div>
+<div class=" slider">
+    <img class="slider__img" src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%; min-height:30%"  alt="music festival">
+    
+    
+    <div class="slider__text">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago - A night we won't forget.</p>
+    </div>       
+    </div>
+    <div class="slider">
+        <img class="slider__img" src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%; min-height:30%"  alt="music festival">
+        
+        <div class="slider__text">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>       
+        </div>
+        <script>
+            var mySlide=  document.querySelectorAll('.slider');
+            mySlide[0].classList.add('slider-fill');
+            {
+
+                let i=1;
+             changeBackground= function(){
+                if(i===3){
+                    i=1;
+                    mySlide[2].classList.remove('slider-fill');
+                    mySlide[0].classList.add('slider-fill');
+                    return;
+                    }
+               mySlide[i-1].classList.remove('slider-fill');
+               mySlide[i].classList.add('slider-fill');
+                   i++;
+                }
+               
+               setInterval(changeBackground,2500);
+            }
+
+        </script>
 <div id="BAND" class="container-name">
 
     <div class="container">
